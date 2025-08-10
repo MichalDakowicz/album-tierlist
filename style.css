@@ -33,7 +33,6 @@ body {
     background-color: #1e1e1e;
     border: 1px solid #333;
     border-radius: 8px;
-    min-height: 120px;
 }
 
 .tier-label-container {
@@ -164,4 +163,40 @@ body {
 }
 .tier-label-queue {
     color: #6c757d;
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 576px) {
+    .input-group {
+        flex-direction: column;
+    }
+    .input-group .form-control,
+    .input-group .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+    #password-section,
+    #edit-section {
+        padding: 0 10px;
+    }
+    .tier-label-container {
+        padding: 10px;
+        font-size: 1.8rem;
+        width: 60px;
+    }
+    .tier-dropzone {
+        padding: 5px;
+        gap: 10px;
+    }
+    .album {
+        width: 80px;
+        height: 80px;
+    }
+    .album-info {
+        font-size: 10px;
+        padding: 3px;
+    }
+    .tier {
+        align-items: center;
+    }
 }

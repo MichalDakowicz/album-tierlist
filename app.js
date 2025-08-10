@@ -128,7 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const renderTiers = () => {
-        const tiers = ["S", "A", "B", "C", "D", "E", "F"];
+        // Define tier order, now including a goat tier at the top
+        const tiers = ["🐐", "S", "A", "B", "C", "D", "E", "F"];
         tierListContainer.innerHTML = ""; // Clear existing tiers
         tiers.forEach((tier) => {
             const tierEl = document.createElement("div");
